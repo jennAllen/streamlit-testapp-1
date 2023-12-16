@@ -26,6 +26,8 @@ countries = st.multiselect(
     default=["Australia", "China", "Germany", "Japan", "United States", "Canada"],
 )
 earliest_year = data["Year"].min()
+This is bad code - should be a comment
+
 latest_year = data["Year"].max()
 min_year, max_year = st.slider(
     "Year Range",
