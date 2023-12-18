@@ -3,21 +3,18 @@ import os.path
 import altair as alt
 import pandas as pd
 import streamlit as st
-import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-st.title("Top 5%" " income share")
+st.title("Top 5%" " INCOME SHARE")
 st.markdown("Share of income received by the richest 5%" " of the population.")
 DATA = os.path.join(HERE, "data.csv")
 
-# Hopefully broken - no numpy packa
-ar = np.array([[1, 2, 3], [4, 5, 6]])
-print(ar)
 
-@st.cache_data 
+@st.cache_data
 def load_data(nrows):
     return pd.read_csv("./data.csv", nrows=nrows)
+
 
 data_load_state = st.text("Loading data...")
 data = load_data(10000)
@@ -26,10 +23,9 @@ data_load_state.text("")
 countries = st.multiselect(
     "Countries",
     list(sorted({d for d in data["Entity"]})),
-    default=["Australia", "China", "Germany", "Japan", "United States", "Canada"],
+    default=["Australia", "China", "Germany", "Japan", "United States"],
 )
-earliest_year = data["Year"].min(
-
+earliest_year = data["Year"].min()
 latest_year = data["Year"].max()
 min_year, max_year = st.slider(
     "Year Range",
