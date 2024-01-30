@@ -6,7 +6,7 @@ import streamlit as st
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-st.title(" Hello World - Jenn Test - Update Jan 30 - User B Is View")
+st.title(" Hello World - Jenn Test")
 st.title("More updates")
 st.title("Updating again")
 st.title(" THIS IS AN UPDATE - REPUBLISH ME")
