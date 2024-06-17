@@ -20,7 +20,7 @@ def load_data(nrows):
 
 
 data_load_state = st.text("Loading data...")
-data = load_data(10000)
+data = load_data_test(10000)
 data_load_state.text("")
 
 countries = st.multiselect(
@@ -28,7 +28,7 @@ countries = st.multiselect(
     list(sorted({d for d in data["Entity"]})),
     default=["Australia", "China", "Germany", "Japan", "United States"],
 )
-earliest_year = data["Year"].mins()
+earliest_year = data["Year"].min()
 latest_year = data["Year"].max()
 min_year, max_year = st.slider(
     "Year Range",
