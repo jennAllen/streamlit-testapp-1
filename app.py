@@ -6,11 +6,10 @@ import streamlit as st
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-st.title("This is the latest change for branch main")
-st.title("This is a new commit")
+
 st.title(" Hello World - Jenn Test")
-st.title("Top 5%" " INCOME SHARE")
-st.title("This is a new commit 25")
+st.title(" Auto_publish test - Branch 24")
+
 st.markdown("Share of income received by the richest 5%" " of the population.")
 DATA = os.path.join(HERE, "data.csv")
 
