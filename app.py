@@ -9,6 +9,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 st.title(" Hello World - Jenn Test")
 st.title(" Auto_publish test - Branch 24")
+st.title( "Another branch update test")
 
 st.markdown("Share of income received by the richest 5%" " of the population.")
 DATA = os.path.join(HERE, "data.csv")
