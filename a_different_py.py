@@ -6,8 +6,7 @@ import streamlit as st
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-st.title("Not from app.py")
-st.title("NEW UPDATE AUTO PUBLISH WITH IMAGE")
+st.title("AUTO PUBLISH UPDATE TEST")
 st.title("Top 5%" " INCOME SHARE")
 st.markdown("Share of income received by the richest 5%" " of the population.")
 DATA = os.path.join(HERE, "data.csv")
