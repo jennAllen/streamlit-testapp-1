@@ -6,6 +6,7 @@ import streamlit as st
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
+st.title("AUTO PUBLISH UPDATE TEST - APRIL 2.3,2025")
 st.title("AUTO PUBLISH UPDATE TEST")
 st.title("Top 5%" " INCOME SHARE")
 st.markdown("Share of income received by the richest 5%" " of the population.")
